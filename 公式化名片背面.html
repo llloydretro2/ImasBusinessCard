@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>公式化名片背面设计 by AyasanaP</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500;700&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --nichika-color: #ffffff; /* 此处控制中间竖线颜色 */
+            --nichika-color-light: #aab2f3; /* 此处控制渐变背景色（右下角） */
+            --text-dark: #333;
+        }
+
+        body {
+            font-family: 'Poppins', 'Noto Sans JP', sans-serif;
+            background-color: #e9e9e9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .card-container {
+            /* 保持与正面相同的尺寸 */
+            width: 910px;
+            height: 550px;
+            background: linear-gradient(135deg, #daeaf6, var(--nichika-color-light)); /* 此处控制渐变背景色（左上角） */
+            border-radius: 20px;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+            overflow: hidden;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .content-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 40px;
+        }
+
+        .shhis-logo {
+            width: 250px;
+            filter: drop-shadow(0 4px 8px rgba(0,0,0,0.1));
+        }
+        
+        .separator {
+            width: 2px;
+            height: 120px;
+            background-color: var(--nichika-color);
+            border-radius: 2px;
+        }
+
+        .producer-details {
+            text-align: left;
+        }
+        
+        .producer-name {
+            font-size: 52px;
+            font-weight: 700;
+            color: #ffffff; /* 此处控制制作人id文字颜色 */
+            margin: 0;
+            line-height: 1.1;
+        }
+
+        .producer-title {
+            font-size: 20px;
+            font-weight: 500;
+            color: #ffffff; /* 此处控制偶像名字文字颜色 */
+            margin: 5px 0 0 0;
+        }
+
+        .logo-283 {
+            position: absolute;
+            bottom: 25px;
+            right: 30px;
+            width: 70px;
+            filter: grayscale(1) opacity(0.4);
+        }
+
+        /* 响应式设计 */
+        @media (max-width: 960px) {
+            .card-container {
+                width: 100%;
+                max-width: 500px;
+                height: auto;
+                aspect-ratio: 91/55;
+            }
+            .content-wrapper {
+                flex-direction: column;
+                gap: 20px;
+            }
+            .shhis-logo {
+                width: 40%;
+            }
+            .separator {
+                width: 100px;
+                height: 2px;
+            }
+            .producer-details {
+                text-align: center;
+            }
+            .producer-name {
+                font-size: 8vw;
+            }
+            .producer-title {
+                font-size: 3.5vw;
+            }
+            .logo-283 {
+                width: 15%;
+                bottom: 15px;
+                right: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card-container">
+        
+        <div class="content-wrapper">
+            <img src="名片素材/组合logo/COMETIK.png" alt="SHHis Logo" class="shhis-logo"> <!-- 此处填写组合logo的文件名 -->
+            </div>
+            <div class="separator"></div>
+            <div class="producer-details">
+                <p class="producer-name">ShinjoP</p> <!-- 此处填写制作人名 -->
+            </div>
+                <p class="producer-title">铃木羽那担当</p> <!-- 此处填写偶像名 -->
+            </div>
+            </div>
+        </div>
+
+
+    </div>
+
+</body>
+</html>
+

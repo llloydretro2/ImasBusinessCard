@@ -9,9 +9,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
     <style>
         :root {
-            --nichika-color: #3194f0; /* 此处控制个人信息左侧文字下方填充颜色 */
-            --text-light: #ffffff; /* 此处控制个人信息右侧文字颜色、担当偶像文字颜色、制作人id颜色 */
-            --text-dark: #ffffff; /* 此处控制个人信息左侧文字颜色 */
+            --nichika-color: #ff4d97; /* 标签填充色：明艳桃红（島村卯月应援色） */
+            --text-light: #ffffff;
+            --text-dark: #ffffff;
         }
 
         body {
@@ -36,9 +36,9 @@
             overflow: hidden;
             position: relative;
             display: flex;
-            background-image: url('3578fd2d333d03dbe31378dd625a3417.jpg'); /* 此处填写你的角色图片文件名 */
+            background-image: url('../../名片素材/灰姑娘女孩/背景_島村卯月.jpg'); /* 背景（共享库·灰姑娘女孩） */
             background-size: cover;
-            background-position: center 30%;
+            background-position: center 20%;
         }
 
         .overlay {
@@ -49,7 +49,7 @@
             height: 100%;
             background: linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0) 60%);
         }
-        
+
         .info-panel {
             width: 45%;
             height: 100%;
@@ -61,7 +61,7 @@
             justify-content: space-between;
             color: var(--text-light);
             clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
-            background: linear-gradient(135deg, rgba(224, 181, 211, 0.75), rgba(224, 181, 211, 0.4));
+            background: linear-gradient(135deg, rgba(255, 77, 151, 0.85), rgba(255, 178, 210, 0.45)); /* 明艳桃红→浅粉，应援色 */
             border-right: 2px solid rgba(255,255,255,0.3);
         }
 
@@ -84,15 +84,16 @@
             line-height: 1.2;
             text-shadow: 0 2px 4px rgba(0,0,0,0.5);
         }
-        
+
         .producer-name {
-            font-size: 56px;
+            font-size: 40px;
             font-weight: 900;
             margin-top: -10px;
             color: var(--text-light);
             text-shadow: 0 4px 8px rgba(0,0,0,0.6);
+            white-space: nowrap;
         }
-        
+
         .contact-info {
             list-style: none;
             padding: 0;
@@ -107,7 +108,7 @@
             display: flex;
             align-items: center;
         }
-        
+
         .contact-info li .label {
             font-weight: 700;
             background-color: var(--nichika-color);
@@ -127,12 +128,12 @@
             width: 150px;
             filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));
         }
-        
+
         .art-panel {
             flex-grow: 1;
             position: relative;
         }
-        
+
         .signature {
             position: absolute;
             right: 40px;
@@ -163,7 +164,7 @@
                 justify-content: flex-end;
             }
             .header, .footer {
-                display: none; /* Hide logos on mobile for cleaner look */
+                display: none;
             }
             .producer-name {
                 font-size: 10vw;
@@ -189,27 +190,27 @@
         <!-- 半透明信息面板 -->
         <div class="info-panel">
             <div class="header">
-                <img src="283事务所logo.png" alt="283 Production Logo" class="logo-283"> <!-- 此处填写事务所logo文件名 -->
-                <h1 class="producer-title">铃木羽那</h1> <!-- 此处填写偶像名 -->
+                <img src="../../名片素材/企划LOGO/346pro_logo.png" alt="346 Production Logo" class="logo-283"> <!-- 事务所logo（共享库·346事务所） -->
+                <h1 class="producer-title">島村卯月担当</h1> <!-- 担当偶像名 -->
             </div>
-            
+
             <div class="main-content">
-                <h2 class="producer-name">ShinjoP</h2> <!-- 此处填写制作人名 -->
-    
-                <ul class="contact-info"> <!-- 以下部分填写个人信息，不需要的行删掉即可 -->
-                    <li><span class="label">QQ</span> 2494873129</li> 
-                    <li><span class="label">B站</span> 24036712</li>
+                <h2 class="producer-name">Shinjo/航母P</h2> <!-- 制作人名 -->
+
+                <ul class="contact-info"> <!-- 填写联系方式，不需要的行整行删掉 -->
+                    <li><span class="label">QQ</span> 2494873129</li>
+                    <li><span class="label">小红书</span> 3375736328</li>
                 </ul>
             </div>
 
             <div class="footer">
-                <img src="名片素材/组合logo/COMETIK.png" alt="SHHis Logo" class="shhis-logo"> <!-- 此处填写组合logo的文件名 -->
+                <img src="../../名片素材/组合LOGO/new generations.png" alt="New Generations Logo" class="shhis-logo"> <!-- 组合logo（共享库·New Generations） -->
             </div>
         </div>
 
         <!-- 角色艺术和签名区域 -->
         <div class="art-panel">
-            <img src="Sc_hana_sign.webp" alt="Nichika Signature" class="signature"> <!-- 此处填写角色签名的文件名 -->
+            <img src="../../名片素材/签名/Cinderella Girls/Cute/し島村卯月.png" alt="Uzuki Signature" class="signature"> <!-- 官方签名（共享库） -->
         </div>
     </div>
 
